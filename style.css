@@ -1,0 +1,28 @@
+body {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+section {
+	border: 2px solid red;
+	margin-top: 3em;	
+}
+
+
+
+section div {
+	background-color: gray;
+	border-radius: 15px;
+	min-width: 500px;
+	height: 100px;
+}
+
+button {
+	border-radius: 50px;
+	background-color: rgb(60, 60, 60);
+}
