@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<title>Random Quote Machine</title>
-
-
-	<!-- STYLE -->
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!-- FONTS and CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Griffy" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-	<section>
-		<h1>Random Quote Machine</h1>		
-		<p>Generator of quotes by famous people.</p>
-		<button type="button" id="generateQuote">Generate Quote</button>
-		<button type="button" id="tweetQuote">Tweet it</button>
+	<section class="container">
+		<div class="row">
+			<div class="col-xs-10 offset-xs-1 col-lg-6 offset-lg-3 m-t-1">
+				<h1>Random Quote Machine</h1>		
+				<p>Generator of quotes by famous people.</p>
+				<button class="btn" id="generateQuote">Generate Quote</button>
+				<a class="btn twitter-share-button" id="tweetQuote" href="https://twitter.com/intent/tweet?text=">Tweet it</a>
 
-		<div id='quoteBox'>
-			<span class="textOfQuote"></span>
-			<span class="authorOfQuote"></span>
+				<div id='quoteBox'>	
+				</div>
+			</div>
 		</div>
 	</section>
 

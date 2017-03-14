@@ -2,6 +2,7 @@ var $quoteBox = $('#quoteBox');
 
 
 
+
 $(document).ready(function () {
 	
 	var $quoteBtn = $('#generateQuote');
@@ -12,9 +13,11 @@ $(document).ready(function () {
 			dataType: 'jsonp',
 			data: "method=getQuote&format=jsonp&lang=en&jsonp=?",
 			success: function(response) {
+				$quoteBox.hide();
 				$quoteBox.empty();
 				$quoteBox.append('<p>' + response.quoteText + '</p>');
 				$quoteBox.append('<cite>- ' + response.quoteAuthor + '</cite>');
+				$quoteBox.fadeIn();
 			}
 		});
 	});
